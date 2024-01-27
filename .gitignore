@@ -1,0 +1,21 @@
+# Node.js
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment variables
+.env.local
+
+# npm
+*.log
+package-lock.json
+
+# Yarn
+yarn-error.log
+yarn.lock
+
+# OS generated files
+.DS_Store
+Thumbs.db
