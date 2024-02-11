@@ -48,7 +48,7 @@ const dashboard = () => {
         timeLine()
         findPeople()
       }
-    },[state && state.token && people, page])
+    },[state && state.token , page])
 
     useEffect(()=> {
       try{
@@ -267,7 +267,7 @@ const dashboard = () => {
             <Search/>
             <br/>
           {state && state.user && state.user.following && <Link className='h6' href={`/user/following`}>{state.user.following.length} Following</Link>}
-            {state && state.token && people &&
+            {state && state.token && people.length>0 &&
               <People people={people} handleFollow={handleFollow}/>}
           </div>
         </div>
